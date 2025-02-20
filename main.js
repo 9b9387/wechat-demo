@@ -79,9 +79,10 @@ cc.game.onStart = function(){
     // The game will be resized when browser size change
     cc.view.resizeWithBrowserSize(true);
 
+    cc.director.runScene(new HelloWorldScene());
+
     //load resources
-    cc.LoaderScene.preload(g_resources, function () {
-        cc.director.runScene(new HelloWorldScene());
-    }, this);
+    // cc.LoaderScene.preload(g_resources, function () {
+    // }, this);
 };
 cc.game.run();

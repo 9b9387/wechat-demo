@@ -12,6 +12,8 @@ var HelloWorldLayer = cc.Layer.extend({
         // ask the window size
         var size = cc.winSize;
 
+        var layer = cc.LayerColor.create(cc.color(255, 0, 0, 255))
+        this.addChild(layer)
         /////////////////////////////
         // 3. add your codes below...
         // add a label shows "Hello World"
